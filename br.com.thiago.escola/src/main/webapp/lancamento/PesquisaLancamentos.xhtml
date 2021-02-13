@@ -1,0 +1,127 @@
+<ui:composition template="/WEB-INF/template/Layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:o="http://omnifaces.org/ui">
+
+	<ui:define name="titulo">Pesquisa de Lançamentos</ui:define>
+
+	<ui:define name="corpo">
+		<h:form id="frmPesquisa">
+			<h1 id="font-h1">Pesquisa de Lançamentos</h1>
+
+			<p:messages autoUpdate="true" closable="true" />
+
+			<p:toolbar style="margin-top: 20px">
+				<p:toolbarGroup>
+					<p:commandButton value="Pesquisar" update="lancamentoTable"
+						icon="ui-icon-circle-zoomout" />
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" outcome="/lancamento/CadastroLancamento"
+						icon="ui-icon-plusthick" />
+				</p:toolbarGroup>
+			</p:toolbar>
+
+			<div class="ui-fluid">
+				<fieldset>
+					<p:focus context="painel" />
+					<p:panelGrid columns="2" id="painel" layout="grid"
+						style="margin-top: 20px" columnClasses="ui-grid-col-2"
+						styleClass="rotulo, campo">
+
+						<p:outputLabel value="Aluno :" for="aluno" />
+						<p:inputText id="aluno" styleClass="up"
+							value="#{pesquisaLancamentoBean.filtro.aluno}" />
+
+						<p:outputLabel value="Professor :" for="professor" />
+						<p:inputText id="professor" styleClass="up"
+							value="#{pesquisaLancamentoBean.filtro.professor}" />
+
+
+						<p:outputLabel value="Matéria :" for="materia" />
+						<p:inputText id="materia" styleClass="up"
+							value="#{pesquisaLancamentoBean.filtro.materia}" />
+
+					</p:panelGrid>
+				</fieldset>
+			</div>
+
+			<fieldset>
+				<p:dataTable id="lancamentoTable"
+					value="#{pesquisaLancamentoBean.model}" var="lancamento"
+					lazy="true" style="margin-top: 20px" reflow="true"
+					emptyMessage="Nenhum dado encontrado." paginatorPosition="bottom"
+					paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} 
+                            {LastPageLink} {RowsPerPageDropdown}"
+					rowsPerPageTemplate="10,20,30" paginator="true" scrollable="true"
+					rows="10">
+
+					<f:facet name="footer">
+						<div align="right">Foram encontrados
+							#{pesquisaLancamentoBean.qtdRegistros()} Registros.</div>
+					</f:facet>
+
+					<p:column headerText="Código">
+						<h:outputText value="#{lancamento.codigo}" />
+					</p:column>
+
+					<p:column headerText="Matéria">
+						<h:outputText value="#{lancamento.materia.descricao}" />
+					</p:column>
+
+					<p:column headerText="N1">
+						<h:outputText value="#{lancamento.nota1}" />
+					</p:column>
+
+					<p:column headerText="N2">
+						<h:outputText value="#{lancamento.nota2}" />
+					</p:column>
+
+					<p:column headerText="N3">
+						<h:outputText value="#{lancamento.nota3}" />
+					</p:column>
+
+					<p:column headerText="Média">
+						<h:outputText value="#{lancamento.media}" />
+					</p:column>
+
+					<p:column headerText="Professor">
+						<h:outputText value="#{lancamento.professor.nome}" />
+					</p:column>
+
+					<p:column headerText="Aluno">
+						<h:outputText value="#{lancamento.aluno.nome}" />
+					</p:column>
+
+					<p:column>
+						<p:button outcome="/lancamento/CadastroLancamento"
+							icon="ui-icon-pencil" title="Editar">
+							<f:param name="lancamento" value="#{lancamento.codigo}" />
+						</p:button>
+
+						<p:commandButton icon="ui-icon-trash" title="Excluir"
+							oncomplete="PF('confirmacaoExclusao').show()" process="@this"
+							update=":frmPesquisa:confirmacaoExclusaoDialog">
+							<f:setPropertyActionListener
+								target="#{pesquisaLancamentoBean.lancamento}"
+								value="#{lancamento}" />
+						</p:commandButton>
+					</p:column>
+				</p:dataTable>
+			</fieldset>
+
+			<p:confirmDialog header="Exclusão de Lancamento"
+				message="Tem certeza que deseja excluir o Lançamento #{pesquisaLancamentoBean.lancamento.codigo}?"
+				widgetVar="confirmacaoExclusao" id="confirmacaoExclusaoDialog">
+				<p:button value="Não"
+					onclick="PF('confirmacaoExclusao').hide(); return false;" />
+				<p:commandButton value="Sim"
+					oncomplete="PF('confirmacaoExclusao').hide();"
+					action="#{pesquisaLancamentoBean.excluir()}" process="@this"
+					update=":frmPesquisa:lancamentoTable" />
+			</p:confirmDialog>
+		</h:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+	<f:facet name="first">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</f:facet>
+
+	<title><ui:insert name="titulo">Sistema Escola</ui:insert></title>
+	<h:outputStylesheet library="css" name="sistema.css" />
+	<h:outputStylesheet library="escola" name="styles/custom.css" />
+	<h:outputStylesheet library="escola" name="styles/layout.css" />
+	<h:outputStylesheet library="escola" name="styles/components.css" />
+
+	<h:outputScript target="body" library="primefaces"
+		name="jquery/jquery.js" />
+	<h:outputScript target="body" library="escola"
+		name="javascripts/app.js" />
+
+</h:head>
+
+<h:body>
+
+	<p:ajaxStatus id="ajaxStatus" onstart="PF('statusDialog').show();"
+		onsuccess="PF('statusDialog').hide();" styleClass="ajax-status" />
+
+	<p:dialog id="dialogAjaxStatus" modal="true" widgetVar="statusDialog"
+		height="200px;" width="200px;" header="Processando"
+		footer="Aguarde..." draggable="false" appendTo="@(body)"
+		dynamic="false" resizable="false" closable="false">
+		<h:graphicImage library="images" name="ajax-loader.gif"
+			id="imgAjaxLoader" styleClass="bordaImagem" />
+	</p:dialog>
+
+	<header class="aw-topbar">
+		<div style="float: left;">
+			<p:outputLabel styleClass="aw-toggle  js-toggle" id="usuario-logado" />
+			<h:link class="aw-toggle" outcome="/Home.xhtml" value="HOME" />
+		</div>
+
+		<div style="float: right;">
+			<a href="#" class="aw-toggle  js-toggle"><i class="fa  fa-bars"></i></a>
+		</div>
+
+		<div style="float: right;">
+			<span style="float: left; height: 30px; line-height: 30px;"> </span>
+
+		</div>
+		<div style="clear: both"></div>
+	</header>
+
+	<aside class="aw-sidebar  js-sidebar">
+
+		<nav class="aw-menu">
+
+			<h:form style="display: inline-block">
+
+				<p:menubar styleClass="menu-sistema" style="margin-top: 20px;">
+
+					<p:submenu label="Cadastro" style="width: 100%;">
+
+						<p:submenu label="Professor" style="width:120px" styleClass="azul">
+
+							<p:menuitem value="Novo" icon="ui-icon-plusthick"
+								outcome="/professor/CadastroProfessor" />
+							<p:menuitem value="Pesquisa" icon="ui-icon-search"
+								outcome="/professor/PesquisaProfessores" />
+						</p:submenu>
+
+						<p:submenu label="Aluno" style="width:120px" styleClass="azul">
+
+							<p:menuitem value="Novo" icon="ui-icon-plusthick"
+								outcome="/aluno/CadastroAluno" />
+							<p:menuitem value="Pesquisa" icon="ui-icon-search"
+								outcome="/aluno/PesquisaAlunos" />
+						</p:submenu>
+
+						<p:submenu label="Materia" style="width:120px" styleClass="azul">
+
+							<p:menuitem value="Novo" icon="ui-icon-plusthick"
+								outcome="/materia/CadastroMateria" />
+							<p:menuitem value="Pesquisa" icon="ui-icon-search"
+								outcome="/materia/PesquisaMaterias" />
+						</p:submenu>
+
+						<p:submenu label="Lançamentos" style="width:120px"
+							styleClass="azul">
+
+							<p:menuitem value="Novo" icon="ui-icon-plusthick"
+								outcome="/lancamento/CadastroLancamento" />
+							<p:menuitem value="Pesquisa" icon="ui-icon-search"
+								outcome="/lancamento/PesquisaLancamentos" />
+						</p:submenu>
+
+					</p:submenu>
+
+					<p:menuitem value="Sair" style="width: 100%;" />
+
+				</p:menubar>
+			</h:form>
+		</nav>
+	</aside>
+
+	<section class="aw-content  js-content">
+		<ui:insert name="corpo" />
+	</section>
+
+	<div class="rodape">
+		SIS - ESCOLA - Copyright Thiago henrique Melo da Silva <strong>
+			- 2021 - Todos os direitos - version 1.0s </strong>
+	</div>
+
+	<script>
+
+	function configurarMoeda() {
+				$(".moeda").maskMoney({ decimal: ",", thousands: ".", allowZero: true });
+			}
+			$(document).ready(function() {
+				configurarMoeda();
+			});			
+		</script>
+
+	<h:outputScript library="js" name="calendar.js" />
+	<h:outputScript library="js" name="jquery.maskMoney.js" />
+	<h:outputScript library="js" name="script.js" />
+	<h:outputScript library="js" name="jquery-3.4.1.mins.js" />
+
+</h:body>
+
+</html>
