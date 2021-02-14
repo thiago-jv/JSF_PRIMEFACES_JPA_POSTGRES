@@ -3,7 +3,7 @@ Projeto Java web para demonstração de conceitos avançados de OO - Orientaçã
 
 # Requisitos
 ```
- 1- Configuar o java 8
+ 1- Configurar o java 8
  2- Baixar o ApacheTomCat 8..
  3- Banco de dados PostgreSql 9.4...
  4- Maven instalado
