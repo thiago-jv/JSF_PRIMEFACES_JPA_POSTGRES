@@ -24,6 +24,7 @@ Projeto Java web para demonstração de conceitos avançados de OO - Orientaçã
  11- CSS
  12- JS
  13- Maven
+ 14- Lombok
 ```
 
 # Passos para baixa e rodar o projeto
