@@ -4,24 +4,26 @@ Projeto Java web para demonstração de conceitos avançados de OO - Orientaçã
 # Requisitos
 ```
  1- Configuar o java 8
- 2- Baixar o tomcat 8..
+ 2- Baixar o ApacheTomCat 8..
  3- Banco de dados PostgreSql 9.4...
  4- Maven instalado
+ 5- IDE-ECLIPSE
  ```
 # Tecnologias utilizadas e outros
 ```
  1- Java 8
- 2- Postgres
- 4- Hibernate/JPA 
- 5- Maven
- 6- JSF 2
- 7- Primefaces 6.0
- 8- Primefaces responsivo
- 9- CDI 
- 10- tomcat
- 11- HTML
- 12- CSS
- 13- JS
+ 2- PostgreSQL
+ 3- Hibernate/JPA 
+ 4- Maven
+ 5- JSF 2
+ 6- Primefaces 6.0
+ 7- Primefaces responsivo
+ 8- CDI- Conext Injection Dependency
+ 9- ApacheTomCat
+ 10- HTML
+ 11- CSS
+ 12- JS
+ 13- Maven
 ```
 
 # Passos para baixa e rodar o projeto
