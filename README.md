@@ -8,6 +8,7 @@ Projeto Java web para demonstração de conceitos avançados de OO - Orientaçã
  3- Banco de dados PostgreSql 9.4...
  4- Maven instalado
  5- IDE-ECLIPSE
+ 6- Baixar e configurar a biblioteca lombok no IDE-ECLIPSE
  ```
 # Tecnologias utilizadas e outros
 ```
