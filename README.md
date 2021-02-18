@@ -46,6 +46,8 @@ Baixar e configurar a biblioteca lombok no IDE-ECLIPSE, caso não esteja segue o
  
  15- Facelets [Sobre](https://www.devmedia.com.br/introducao-ao-facelets/5332)
  
+ 16- Ajax [Sobre](https://www.devmedia.com.br/o-que-e-o-ajax/6702)
+ 
 
 # Passos para baixa e rodar o projeto
 ```
