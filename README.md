@@ -1,32 +1,47 @@
 # JSF_PRIMEFACES_JPA_POSTGRES
 Projeto Java web para demonstração de conceitos avançados de OO - Orientação a Objetos
 
-# Requisitos
-```
- 1- Configurar o java 8
- 2- Baixar o ApacheTomCat 8..
- 3- Banco de dados PostgreSql 9.4...
- 4- Maven instalado
- 5- IDE-ECLIPSE
- 6- Baixar e configurar a biblioteca lombok no IDE-ECLIPSE
- ```
+# Pré-requisitos
+
+O maven deve está instalado, caso não esteja segue o link [maven](https://dicasdejava.com.br/como-instalar-o-maven-no-windows/)
+
+Instalar e configurar o java, caso não esteja segue o link [java](https://medium.com/beelabacademy/configurando-vari%C3%A1veis-de-ambiente-java-home-e-maven-home-no-windows-e-unix-d9461f783c26)
+
+Instalar e configurar banco de dados postgersql, caso não esteja segue o link [postgresql](https://www.youtube.com/watch?v=FoqXi0wpX4c)
+
+Instalar e configurar o ApacheTomCat 8, caso não esteja segue o link [TomCat](https://www.devmedia.com.br/instalacao-e-configuracao-do-apache-tomcat-no-eclipse/27360)
+ 
+Baixar e configurar a biblioteca lombok no IDE-ECLIPSE, caso não esteja segue o link [Lombok](https://medium.com/danielpadua/java-lombok-7e364df75080)
+
+
 # Tecnologias utilizadas e outros
-```
- 1- Java 8
- 2- PostgreSQL
- 3- Hibernate/JPA 
- 4- Maven
- 5- JSF 2
- 6- Primefaces 6.0
- 7- Primefaces responsivo
- 8- CDI- Conext Injection Dependency
- 9- ApacheTomCat
- 10- HTML
- 11- CSS
- 12- JS
- 13- Maven
- 14- Lombok
-```
+
+ 1- Java 8 [Sobre](https://www.java.com/pt-BR/download/help/java8_pt-br.html)
+
+ 2- PostgresSql 12 [Sobre](https://www.postgresql.org/docs/12/index.html)
+ 
+ 3- Hibernate/JPA [Sobre](https://angeliski.com.br/2017/03/07/jpa-e-hibernate-existe-diferenca/)
+ 
+ 4- Maven [Sobre](https://www.dclick.com.br/2010/09/15/o-que-e-o-maven-e-seus-primeiros-passos-com-a-ferramenta/)
+ 
+ 5- JSF 2 [Sobre](http://fabrica.ms.senac.br/2013/06/o-que-e-jsf-java-server-faces/)
+ 
+ 6- Primefaces [Sobre](https://blog.algaworks.com/tecnologia-e-mercado-do-primefaces/)
+ 
+ 7- Primefaces responsivo [Sobre](https://cafe.algaworks.com/fn015-wspfresponsivo/)
+ 
+ 8- CDI- Conext Injection Dependency [Sobre](http://www.mauda.com.br/?p=1641)
+ 
+ 9- ApacheTomCat [Sobre](https://rockcontent.com/br/blog/tomcat/)
+ 
+ 10- HTML5 [Sobre](https://www.techtudo.com.br/artigos/noticia/2011/12/o-que-e-html5.html)
+ 
+ 11- CSS [Sobre](https://www.tecmundo.com.br/programacao/2705-o-que-e-css-.htm)
+ 
+ 12- JS [Sobre](https://canaltech.com.br/internet/O-que-e-e-como-funciona-a-linguagem-JavaScript/)
+ 
+ 13- Lombok [Sobre](https://www.devmedia.com.br/uma-visao-sobre-o-projeto-lombok/28321)
+ 
 
 # Passos para baixa e rodar o projeto
 ```
