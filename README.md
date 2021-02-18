@@ -22,25 +22,29 @@ Baixar e configurar a biblioteca lombok no IDE-ECLIPSE, caso não esteja segue o
  
  3- Hibernate/JPA [Sobre](https://angeliski.com.br/2017/03/07/jpa-e-hibernate-existe-diferenca/)
  
- 4- Maven [Sobre](https://www.dclick.com.br/2010/09/15/o-que-e-o-maven-e-seus-primeiros-passos-com-a-ferramenta/)
+ 4- Beans Validation [Sobre](https://blog.algaworks.com/validacao-com-bean-validation/)
  
- 5- JSF 2 [Sobre](http://fabrica.ms.senac.br/2013/06/o-que-e-jsf-java-server-faces/)
+ 5- Maven [Sobre](https://www.dclick.com.br/2010/09/15/o-que-e-o-maven-e-seus-primeiros-passos-com-a-ferramenta/)
  
- 6- Primefaces [Sobre](https://blog.algaworks.com/tecnologia-e-mercado-do-primefaces/)
+ 6- JSF 2 [Sobre](http://fabrica.ms.senac.br/2013/06/o-que-e-jsf-java-server-faces/)
  
- 7- Primefaces responsivo [Sobre](https://cafe.algaworks.com/fn015-wspfresponsivo/)
+ 7- Primefaces [Sobre](https://blog.algaworks.com/tecnologia-e-mercado-do-primefaces/)
  
- 8- CDI- Conext Injection Dependency [Sobre](http://www.mauda.com.br/?p=1641)
+ 8- Primefaces responsivo [Sobre](https://cafe.algaworks.com/fn015-wspfresponsivo/)
  
- 9- ApacheTomCat [Sobre](https://rockcontent.com/br/blog/tomcat/)
+ 9- CDI- Conext Injection Dependency [Sobre](http://www.mauda.com.br/?p=1641)
  
- 10- HTML5 [Sobre](https://www.techtudo.com.br/artigos/noticia/2011/12/o-que-e-html5.html)
+ 10- ApacheTomCat [Sobre](https://rockcontent.com/br/blog/tomcat/)
  
- 11- CSS [Sobre](https://www.tecmundo.com.br/programacao/2705-o-que-e-css-.htm)
+ 11- HTML5 [Sobre](https://www.techtudo.com.br/artigos/noticia/2011/12/o-que-e-html5.html)
  
- 12- JS [Sobre](https://canaltech.com.br/internet/O-que-e-e-como-funciona-a-linguagem-JavaScript/)
+ 12- CSS [Sobre](https://www.tecmundo.com.br/programacao/2705-o-que-e-css-.htm)
  
- 13- Lombok [Sobre](https://www.devmedia.com.br/uma-visao-sobre-o-projeto-lombok/28321)
+ 13- JS [Sobre](https://canaltech.com.br/internet/O-que-e-e-como-funciona-a-linguagem-JavaScript/)
+ 
+ 14- Lombok [Sobre](https://www.devmedia.com.br/uma-visao-sobre-o-projeto-lombok/28321)
+ 
+ 15- Facelets [Sobre](https://www.devmedia.com.br/introducao-ao-facelets/5332)
  
 
 # Passos para baixa e rodar o projeto
