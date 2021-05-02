@@ -1,5 +1,4 @@
-# JSF_PRIMEFACES_JPA_POSTGRES
-Projeto Java web para demonstração de conceitos avançados de OO - Orientação a Objetos
+# Projeto Java web para demonstração de conceitos avançados de OO - Orientação a Objetos
 
 # Pré-requisitos
 
